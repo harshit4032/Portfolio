@@ -121,7 +121,7 @@
                   </div>
                   <div class="home_data">
                     <h1 class="home_title">Hello, I'm Harshit 😎 </h1>
-                    <h3 class="home_subtitle">AI ML Engineer</h3>
+                    <h3><span class="home_subtitle"></span></h3>
                     <p class="home_description">Designing machine learning systems and self-running artificial intelligence (AI) software to automate predictive models.
                     </p>
                     <a href="#contact" class="button button--flex">
@@ -768,5 +768,17 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="js/main.js"></script>
+
+    <!-- ================== Typed js===================== -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    const typed = new Typed('.home_subtitle',{
+      strings:['UG studdent at NIT KKR','Electrical Engineering','AI ML Researcher'],
+      typeSpeed:50,
+      backSpeed:50,
+      backDelay:1000,
+      loop:true,
+    });
+  </script>
   </body>
 </html>

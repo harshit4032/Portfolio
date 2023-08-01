@@ -346,6 +346,9 @@ font-size: 2rem;
 .home_scroll-arrow{
   font-size: 1.2rem;
 }
+.home_subtitle{
+  color: #400584;
+}
 /*==================== BUTTONS ====================*/
 
 .button{
