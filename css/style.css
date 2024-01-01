@@ -103,6 +103,11 @@ body.dark-theme{
   padding: 0;
   margin: 0;
 }
+#particles-js{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
 html {
   scroll-behavior: smooth;
@@ -114,6 +119,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+ 
 }
 
 h1, h2, h3, h4 {
@@ -157,9 +163,10 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  max-width: 90%;
+  /* margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5); */
+
 }
 
 .grid {
@@ -179,20 +186,24 @@ img {
 
 /*==================== NAV ====================*/
 .nav{
-  max-width: 968px;
-  height:var(--header-height) ;
+  /* max-width: 968px; */
+  /* height:var(--header-height) ; */
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: gilroy;
 }
 .nav_logo,.nav_toggle{
 color:var(--title-color);
-font-weight: var(--font-medium);
-font-size: 2rem;
+padding: 5% 6.1%;
+margin-top: .5%;
+font-weight: bold;
+font-size: xx-large;
 }
 
 .nav_logo:hover{
-  color: var(--first-color);
+  /* color: var(--first-color); */
 }
 .nav_toggle{
   font-size: 1.1rem;
@@ -201,15 +212,18 @@ font-size: 2rem;
 .nav_toggle:hover{
   color: var(--first-color);
 }
+.nav_list{
+  margin: 55px 35px;
+  height: 11px;
+}
 
 @media screen and (max-width:767px) {
   .nav_menu{
     position:fixed;
     bottom: -100%;
-    left:0;
     width: 100%;
     background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
+    padding: 2rem 1.5rem 8rem;
     box-shadow: 0 -1px 4px rgba(0,0,0, .15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
@@ -218,13 +232,14 @@ font-size: 2rem;
 }
 .nav_list{
   grid-template-columns: repeat(3,1fr);
-  gap:2rem;
+  gap:10rem;
 }
 .nav_link{
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
+  /* font-size: var(--small-font-size); */
+  font-size: 16px;
   color:var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -285,9 +300,9 @@ font-size: 2rem;
 }
 .home_social-icon{
   font-size: 1.25rem;
+  font-family: gilroy;
   color: var(--first-color);
   transition: all .1s ease-in-out;
-
 }
 
 .home_social-icon:hover{
@@ -864,7 +879,7 @@ font-size: 2rem;
 
 }
 
-.footer_title{
+.footer_title>a{
   font-size: var(--h1-font-size);
   color: #fff;
   margin-bottom: var(--mb-0-25);
